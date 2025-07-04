@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const serverless = require("serverless-http");
 
 // JSON PARSE
 app.use(express.json());
