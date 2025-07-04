@@ -27,7 +27,7 @@ app.use(
 app.use(require("express-xss-sanitizer").xss());
 
 // Cors Policy
-app.use(require("cors")({ origin: process.env.CLIENT_DOMAIN }));
+app.use(require("cors")({ origin: process.env.CLIENT_DOMAIN || "*" }));
 
 // Use Morgan Package Only When you in develop Mode
 if (process.env.NODE_ENV === "development") {
