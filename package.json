@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon ./app.js",
-    "start": "node ./app.js",
-    "build": "netlify deploy --prod"
+    "start": "node ./app.js"
   },
   "author": "kirollos_andrawes",
   "license": "ISC",
@@ -29,6 +28,7 @@
     "nodemailer": "^7.0.4"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "morgan": "^1.10.0"
   }
 }
