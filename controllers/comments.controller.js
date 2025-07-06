@@ -13,7 +13,7 @@ module.exports.getAllCommentsCtrl = asyncHandler(async (_, response) => {
   // get all comments from db
   const comments = await CommentDB.find().populate({
     path: "user",
-    select: "-password -__v",
+    select: ["-password", "-__v"],
   });
 
   // set response to the client
